@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate age</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="date" id="date1">
+        <input type="date" id="date2">
+        <input type="button" value="calculate age" onclick="calage()">
+    </div>
+    <script>
+       function calage()
+       { 
+        //var date1= new Date();
+        var date1=document.getElementById("date1").value;
+        var date2=document.getElementById("date2").value;
+        //var time=date1.getMonth();
+        var dateval1=date1.split("-");
+        var dateval2=date2.split("-");
+        var year=(parseInt(dateval2[0])-parseInt(dateval1[0]))*12;
+        var res=year-parseInt(dateval1[1])+parseInt(dateval2[1]);
+        var month=parseInt(dateval2[1])+parseInt(dateval1[1]);
+        var day=parseInt(dateval2[2])-parseInt(dateval1[2]);
+        if(res<12)
+        {
+            console.log(res+" Months");  
+        }
+        else{
+            console.log(res/12+ " Year");
+        }
+       
+       }
+    </script>
+</body>
+</html>

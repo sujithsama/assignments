@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student feedback</title>
+    <style>
+        body{
+            background: rgb(249, 247, 247);
+        }
+ .flex{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+ }
+ .table{
+    height: 1000px;
+    width: 820px;
+    font-size: 20px;
+ }
+ .textbox{
+    height: 40px;
+    width: 800px;
+    font-size: 18px;
+    padding-left: 5px;
+    border-radius: 0.2cm;
+ }
+ .text{
+    width: 300px;
+    height: 40px;
+    border-radius: 0.2cm;
+ }
+ td{
+    padding-left: 10px;
+ }
+ .button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 0.2cm;
+    color: blue;
+    background-color: aqua;
+ }
+ .title{
+    text-align: center;
+    font-size: 40px;
+    padding: 0%;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(242, 71, 71);
+ }
+ .buttontd{
+    text-align: center;
+ }
+ .button:hover{
+    color: white;
+    background-color: red;
+ }
+ marquee{
+    color: red;
+ }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <table class="table" border="0" cellpadding="0px" cellspacing="0px">
+            <form class="form">
+              <tr><td class="title" colspan="2">Student Feedback</td></tr>
+              <tr><td colspan="2"><marquee>Please help us improve our courses by filling out this form</marquee></td></tr>
+              <tr><td>Teacher/Instructor first name</td><td>Teacher/Instructor last name</td></tr>
+              <tr><td><input class="text" type="text"></td><td><input class="text"  type="text"></td></tr>
+              <tr><td>Subject</td><td>Course Code</td></tr>
+              <tr><td><input class="text"  type="text"></td><td><input class="text"  type="text"></td></tr>
+              <tr><td colspan="2">Why did you choose this course?</td></tr>
+              <tr><td colspan="2">
+                <select class="textbox" >
+                    <option>Degree Requirement</option>
+                    <option>For Job</option>
+                    <option>Skill Enhancement</option>
+                </select>
+              </td></tr>
+              <tr><td colspan="2">Level of knowledge on the start of course</td></tr>
+              <tr><td colspan="2">
+                <select class="textbox" >
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Moderate</option>
+                    <option>Beginner</option>
+                </select>
+              </td></tr>
+              <tr><td colspan="2">Level of effort invested in this course</td></tr>
+              <tr><td colspan="2">
+                <select class="textbox" >
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Moderate</option>
+                    <option>Bad</option>
+                </select>
+              </td></tr>
+              <tr><td colspan="2">Level of knowledge on the end of course</td></tr>
+              <tr><td colspan="2">
+                <select class="textbox" >
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Moderate</option>
+                    <option>Bad</option>
+                </select>
+              </td></tr>
+              <tr><td colspan="2">Level of Communication</td></tr>
+              <tr><td colspan="2">
+                <select class="textbox" >
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Moderate</option>
+                    <option>Bad</option>
+                </select>
+              </td></tr>
+              <tr><td colspan="2">Would you recommend this course to other students?</td></tr>
+              <tr><td colspan="2">
+                <select class="textbox" >
+                    <option>YES</option>
+                    <option>NO</option>
+                </select>
+              </td></tr>
+              <tr>
+                <td class="buttontd" colspan="2"><input class="button" type="submit"></td>
+              </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

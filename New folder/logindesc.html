@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 1%;
+            font-size: 20px;
+        }
+        .container{
+            display: flex;
+             
+            align-items: center;
+            flex-flow: column;
+        }
+        #usernamevalue{
+            background-color: bisque;
+            color: red;
+        }
+        .desc{
+            display: block;
+            justify-self: flex-start;
+            align-self: center;
+        }
+        .form{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        .button{
+            align-items: center;
+            text-align: center;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="desc">
+            <span></span>
+           <table id="displaytable">
+            <tr>
+                <td>Username: </td>
+                <td id="usernamevalue"></td>
+            </tr>
+              <tr>
+                <td>password: </td>
+                <td id="passwordvalue"></td>
+            </tr>
+              <tr>
+                <td>Email Id: </td>
+                <td id="mailvalue"></td>
+            </tr>
+              <tr>
+                <td>mobilenumber: </td>
+                <td id="phonevalue"></td>
+            </tr>
+           </table>
+        </div>
+        <div class="form" >
+            <table>
+            <form >
+                
+                    <tr>
+                        <td><input type="text" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="submit"class="button" onclick="desc()"></td>
+                    </tr>
+                
+            </form>
+        </table>
+        </div>
+    </div>
+    <script>
+       function desc(){
+        var name=document.getElementById("username").value;
+        var pass=document.getElementById("pass").value;
+        var mail=document.getElementById("mail").value;
+        var phone=document.getElementById("phone").value;
+       
+        if(name=="")
+        {
+            document.getElementById("username").value="";
+            document.getElementById("username").focus();
+            window.alert("enter valid username");
+        }
+        if(pass=="")
+        {
+            document.getElementById("pass").value="";
+            document.getElementById("pass").focus();
+            window.alert("enter valid password");
+        }
+        if(phone=="")
+        {
+            document.getElementById("phone").value="";
+            document.getElementById("phone").focus();
+            window.alert("enter valid mobilenumber");
+        }
+        if(mail=="")
+        {
+            document.getElementById("mail").value="";
+            document.getElementById("mail").focus();
+            window.alert("enter valid mail id");
+        }
+       
+       document.getElementById("usernamevalue").innerHTML=name;
+       document.getElementById("passwordvalue").innerHTML=pass;
+       document.getElementById("mailvalue").innerHTML=mail;
+       document.getElementById("phonevalue").innerHTML=phone;
+        
+       console.log("hello");
+    }
+    </script>
+</body>
+</html>

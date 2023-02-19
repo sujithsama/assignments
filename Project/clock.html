@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital clock</title>
+    <link rel="script" src="script.js">
+    <script src="script.js"></script>
+     <style>
+        body{
+            background-color:white;
+            background-color:rgb(161, 189, 178);
+            width: 1800px;
+            height: 1080px;
+        }
+       .nav{
+        font-size: 30px;
+        text-decoration: none;
+       }
+       .nav:hover{
+        color: blue;
+        border-bottom: 5px solid red;
+       }
+
+        .flex{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Montserrat,sans-serif;
+            color: #343434;
+            font-weight: 900;
+            height: 800px;
+            width: 1700px;
+            padding-top: 0%;
+        }
+        .text{
+            font-size: 5.5rem;
+            color: rgb(220, 144, 51);
+        }
+        .field{
+            font-size: 5rem;
+            border: 0ch;
+            background-color: inherit;
+        }
+        .f{
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+        .f input{
+            display: inline-block;
+            width: 250px;
+            font-family: Montserrat,sans-serif;
+    font-weight: 900;
+    color: #343434;
+    text-align: center;
+    transform: translateX(0.2cm);
+        }
+        .weekday{
+            font-size: 5rem;
+            width: 400px;
+            margin-top: 0%;
+        }
+        #dayname{
+            width: 500px;
+            color: rgb(34, 88, 88);
+        }
+        #month{
+            width: 400px;
+        }
+        .button{
+            height: 45px;
+            width: 200px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background-color: rgb(220, 172, 172);
+            color: #bd2a40;
+            border-radius: 0.2cm;
+            border: 0ch;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .button:hover{
+            color: white;
+            background-color: red;
+        }
+     </style>
+</head>
+<body>
+   <div>
+    <a class="nav" href="index.html">Home</a>
+   </div>
+   <div class="flex">
+    <div class="text">
+        <p>Digital Clock</p>
+    </div>
+    <div class="f">
+        <input class="field weekday" id="dayname" type="text" name="dayname" ><span class="field">,</span><br>
+        <input class="field" id="day" type="text" name="day" ><span class="field">:</span>
+        <input class="field" id="month" type="text" name="month" ><span class="field">:</span>
+        <input class="field" id="year" type="text" name="year" >
+    </div>
+    <div class="f">
+        <input class="field" id="hour" type="text" name="hour" ><span class="field">:</span>
+        <input class="field" id="minute" type="text" name="minute" ><span class="field">:</span>
+        <input class="field" id="second" type="text" name="second" >
+        <input class="field" id="daytime" type="text" name="daytime" >
+    </div>
+    <div>
+        <input type="button" class="button" value="24-HOUR" onclick="tfour()">
+        <input type="button" class="button" value="12-HOUR" onclick="twhr()">
+    </div>
+   </div>
+   
+</body>
+</html>

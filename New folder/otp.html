@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let time=0;
+        let otp=0;
+        function generateOtp(){
+           let a= Math.round(Math.random()*600000);
+           otp=a;
+            //console.log(a);
+            window.alert("otp is : "+otp);
+            authenticateotp();
+        }
+        time=setTimeout(generateOtp,5000);
+        function authenticateotp()
+        {
+            var auth=0;
+            auth=window.prompt("Enter the OTP ");
+            if(auth==otp)
+            {
+                window.alert("Authentication Successful");
+            }
+            else{
+                window.alert("Authentication Failed");
+            }
+        }
+       // generateOtp();
+    </script>
+</body>
+</html>

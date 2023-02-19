@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navbar</title>
+       
+        <style>
+            body{
+    font-family: 'Lucida Sans';
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url(C:\Users\HI\OneDrive\Desktop\careerX\flipkart\Images\spiderman.jpg);
+}
+.container{
+display: flex;
+justify-content: space-between;
+}
+.container ul{
+list-style: none;
+display: inline-flex;
+}
+.container ul li a{
+text-decoration: none;
+color: white;
+margin-left: 50px;
+transition: all;
+}
+.container ul li a:hover{
+color: red;
+border-bottom: 1.5px solid orange;
+font-size: 18px;
+}
+.name{
+margin-left: 10px;
+color: red;
+font-size: 25px;
+}
+.buttonslist li{
+margin-left: 2em;
+}
+.textarea{
+display: flex;
+      justify-content: center;
+                height: 500px;
+                width: auto;
+                align-items: center;
+            }
+            .para{
+                font-size: 100px;
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+              .table tr input{
+                display: block;
+              }
+        .contactform{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(235, 187, 30);
+        }
+        .contactform input{
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 0.3cm;
+        }
+        .form{
+            text-align: center;
+            align-items: center;
+        }
+        .button{
+            margin-left: 85px;
+            color: red;
+        }
+        .button:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+ <body>
+<div class="container">
+   
+    <ul>
+        <Li class="name">SUJITH</Li>
+        <Li><a href="#">HOME</a></Li>
+        <Li><a href="#">CONTACT ME</a></Li>
+        <Li><a href="#">ABOUT ME</a></Li> 
+        <Li><a href="#">PROJECTS</a></Li>
+        <Li><a href="#">ACHIEVEMENTS</a></Li>  
+       </ul>
+       
+</div>
+<section>
+    <div class="textarea">
+        <p class="para">
+            Welcome to my Space!
+        </p>
+    </div>
+</section>
+<div class="contactform">
+    <table class="table" cellspacing="5px" cellpadding="5px">
+        <form class="form">
+            <tr><td colspan="2">Get in Touch with me</td></tr>
+            <tr><td>Name : </td> <td><input type="text" placeholder=" Enter your Name"></td></tr>
+            <tr><td>Mail id : </td><td><input type="email" placeholder=" Enter your Mail"></td></tr>
+            <tr><td>Phone Number : </td><td><input type="number" placeholder=" Phone Number" minlength="10" maxlength="10"></td></tr>
+            <tr><td>Message : </td><td><input type="text" placeholder=" Message"></td></tr>
+            <tr><td colspan="2"><input class="button" type="submit"></td></tr>
+        </form>
+    </table>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <style>
+        *{
+            padding: 2px;
+            margin: 5px;
+            font-size: 20px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <span>Enter in Rupees</span><input type="number" id="first">
+    
+  
+   <div>
+  <select id="sel">
+    <option value="Euros">Euros</option>
+    <option value="US Dollar">US Dollar</option>
+    <option value="Pound">Pound</option>
+  </select> 
+   </div>
+    <span>value is</span><input type="number" id="second">
+    <input type="submit" id="button" value="convert" onclick="convert()">
+  </div>
+  <script>
+   
+    
+   // console.log(converstion);
+    function convert(){
+        var first=parseInt(document.getElementById("first").value);
+        var converstion=document.getElementById("sel").value;
+        var valuee=0;
+        console.log(converstion);
+        if(converstion=="Euros")
+        {
+            valuee=first*0.011;
+        }
+        else if(converstion=="US Dollar")
+        {
+            valuee=first*0.012;
+        }
+        else if(converstion=="Pound")
+        {
+            valuee=first*0.010;
+        }
+        else{
+
+        }
+        document.getElementById("second").value=(valuee).toFixed(2);
+        setInterval(convert,100)
+    }
+  </script>
+</body>
+</html>

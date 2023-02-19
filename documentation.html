@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <style>
+        body{
+            font-size: 25px;
+            background-color: antiquewhite;
+        }
+.container{
+    display: flex;
+    
+    height: auto;
+    width: auto;
+}
+.child1{
+
+min-width: 400px;
+position: fixed;
+
+padding-left: 20px;
+}
+.child2{
+    
+    padding-left: 50px;
+    margin-left: 400px;
+}
+.dm{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 0.2cm;
+    background-color: white;
+    color: blue;
+}
+h2{
+    font-size: 30px;
+    color: rgb(153, 81, 30);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">
+     <section>
+        <h2>Documentation Menu</h2>
+        <div class="dm">About JavaScript </div>
+        <div class="dm">Built-In Objects</div>
+        <div class="dm">Expressions and Operators</div>
+        <div class="dm">Statements and declarations</div>
+        <div class="dm">Functions</div>
+     </section>
+
+        </div>
+        <div class="child2">
+          <section>
+            <h2>About JavaScript</h2>
+            <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+          </section>
+          <section>
+            <h2>Built-In Objects</h2>
+            <p>The term "global objects" (or standard built-in objects) here is not to be confused with the global object. Here, "global objects" refer to objects in the global scope.
+
+                The global object itself can be accessed using the this operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any.
+                
+                Other objects in the global scope are either created by the user script or provided by the host application.</p>
+          </section>
+          <section>
+            <h2>Expressions and Operators</h2>
+           <span>Basic keywords and general expressions in JavaScript. These expressions have the highest precedence (higher than operators).
+
+            <br>this <br>
+            The this keyword refers to a special property of an execution context.
+            <br>
+            Literals <br>
+            Basic null, boolean, number, and string literals.
+            <br>
+            [] <br>
+            Array initializer/literal syntax.
+            <br>
+            {} <br>
+            Object initializer/literal syntax.
+            <br>
+            function <br>
+            The function keyword defines a function expression.
+            <br>
+            class <br>
+            The class keyword defines a class expression.
+            <br>
+            function* <br>
+            The function* keyword defines a generator function expression.
+            <br>
+            async function <br>
+            The async function defines an async function expression.
+            <br>
+            async function* <br>
+            The async function* keywords define an async generator function expression.
+            <br>
+            /ab+c/i <br>
+            Regular expression literal syntax.
+            <br>
+            `string` <br>
+            Template literal syntax.</span>
+          </section>
+          <section>
+            <h2>Statements and declarations</h2>
+            <p>JavaScript applications consist of statements with an appropriate syntax. A single statement may span multiple lines. Multiple statements may occur on a single line if each statement is separated by a semicolon. This isn't a keyword, but a group of keywords.</p>
+          </section>
+          <section>
+            <h2>Functions</h2>
+            <p>Generally speaking, a function is a "subprogram" that can be called by code external (or internal, in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function as parameters, and the function will return a value.
+
+                In JavaScript, functions are first-class objects, because they can be passed to other functions, returned from functions, and assigned to variables and properties. They can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.</p>
+          </section>
+        </div>
+    </div>
+</body>
+</html>
