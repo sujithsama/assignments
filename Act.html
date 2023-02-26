@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+        }
+        body{
+            background-color: red;
+            font-size: 20px;
+            color: white;
+        }
+        .nav{
+            display: flex;
+        }
+        img,p{
+            display: inline-block;
+        }
+        p{
+            padding-left: 20px;
+        }
+     .table{
+        width: 600px;
+        height: 500px;
+        text-align: center;
+        color: black;
+     }
+     .tableheader{
+        background-color: yellow;
+        color: black;
+        font-weight: 400;
+     }
+     .tabledata{
+   background-color: white;
+     }
+     .contact{
+        display: block;
+     }
+     .button{
+        width: 150px;
+        height: 50px;
+        border-radius: 0.2cm;
+        font-size: 20px;
+        margin-left: 200px;
+        background-color: white;
+        color: red;
+     }
+     .button:hover{
+        background-color: green;
+        color: white;
+     }
+     .btn{
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="nav">
+          <img src="data:image/png;base64,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">
+        <p>We offer broadband on optic fiber and our Fiber-To-The-Home technology can carry vast amount of information at speeds up to 1 Gbps. We are currently the largest fiber broadband services provider in the wired broadband category, and the largest non-telco ISP in the country.</p>
+        <p class="contact">Call us: 9876543212</p>
+        <p class="contact">Mail us: act@gmail.com</p>
+    </div>
+        <div>
+            <table class="table" cellspacing="8px" border="0">
+                
+                    <tr class="tableheader"><td>Plans</td>
+                        <td>Speed</td>
+                        <td>Monthly Rental</td>
+                        <td>FUP</td></tr>
+                
+                <tr class="tabledata">
+                    <td>Act Basic</td>
+                    <td>25 Mbps</td>
+                    <td>449</td>
+                    <td>125GB</td>
+                </tr>
+                <tr class="tabledata">
+                    <td>Act Rush</td>
+                    <td>40 Mbps</td>
+                    <td>799</td>
+                    <td>200GB</td>
+                </tr>
+                <tr class="tabledata">
+                    <td>Act storm</td>
+                    <td>100 Mbps</td>
+                    <td>999</td>
+                    <td>250GB</td>
+                </tr>
+                <tr class="tabledata">
+                    <td>Act Race</td>
+                    <td>100 Mbps</td>
+                    <td>1199</td>
+                    <td>350GB</td>
+                </tr>
+                <tr class="tabledata">
+                    <td>Act zoom</td>
+                    <td>125 Mbps</td>
+                    <td>1399</td>
+                    <td>450GB</td>
+                </tr>
+                <tr class="tabledata">
+                    <td>Act Bolt</td>
+                    <td>150 Mbps</td>
+                    <td>1999</td>
+                    <td>500GB</td>
+                </tr>
+                <tr>
+                    <td class="btn" colspan="2"><input type="button" class="button" value="Get more info"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
