@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printreverse</title>
+</head>
+<body>
+    <script>
+        let number=121;
+        
+        function reverse(num){
+        let q=num.toString();
+        let r='';
+       // let j=0;
+        for(i=q.length-1;i>=0;i--){
+              r=r+q[i];
+            
+        }
+        let s='';
+        for(i=q.length-1;i>=0;i--){
+              s=s+r[i];
+            
+        }
+        console.log(r);
+        console.log(s);
+        if(r==s){
+            document.writeln("is Palindrome");
+        }
+        else{
+            document.writeln("is not Palindrome");
+        }
+        }
+        let reversednumber=reverse(number);
+        //document.writeln(reversednumber);
+    </script>
+</body>
+</html>

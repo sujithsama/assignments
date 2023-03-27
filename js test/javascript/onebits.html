@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onebits</title>
+</head>
+<body>
+    <script>
+        let str="01101001";
+        let op=onebits(str);
+       function onebits(str){
+        let count=0;
+        for(i in str){
+            if(str[i]=='1')
+            {
+                count++;
+            }
+        }
+        return count;
+       }
+        document.writeln(op);
+    </script>
+</body>
+</html>

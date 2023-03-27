@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let head=[4,2,1,3];
+      /* let q= head.sort();
+        let w=q.toString(); */
+        let i=0,j=0,temp=0;
+        for(i=0;i<head.length;i++)
+        {
+            for(j=0;j<head.length;j++)
+            {
+                if(head[i]<head[j]){
+                    temp=head[i];
+                    head[i]=head[j];
+                    head[j]=temp;
+                }
+            }
+        }
+        let w=head.toString();
+        document.writeln(w);
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman</title>
+</head>
+<body>
+    <script>
+        let str="LVIII";
+        let I=1;
+        let V=5;
+        let X=10;
+        let L=50;
+        let C=100;
+        let D=500;
+        let M=1000;
+         
+        function roman(str)
+        {
+            let value=0;
+            for(i in str)
+            {
+                if(str[i]=='I')
+                {
+                    value=value+1;
+                }
+                if(str[i]=='V')
+                {
+                    value=value+5;
+                }
+                if(str[i]=='X')
+                {
+                    value=value+10;
+                }
+                if(str[i]=='L')
+                {
+                    value=value+50;
+                }
+                if(str[i]=='C')
+                {
+                    value=value+100;
+                }
+                if(str[i]=='D')
+                {
+                    value=value+500;
+                }
+                if(str[i]=='M')
+                {
+                    value=value+1000;
+                }
+            }
+            return value;
+        }
+      let q=roman(str);
+      document.writeln(q);
+        
+    </script>
+</body>
+</html>
