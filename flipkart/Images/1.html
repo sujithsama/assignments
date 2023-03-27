@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                height: 100px;
+                width: auto;
+               /* border: 2px solid red; */
+                display: flex;
+                align-items: center;
+                
+            }
+            .child1{
+               /* border: 2px solid green; */
+                min-width: 900px;
+            }
+            .child2{
+              /* border: 2px solid orange; */
+                align-items: flex-end;
+                display: inline-flex;
+                padding-left: 20%;
+            }
+            .list li{
+                list-style: none;
+                display: inline;
+            }
+            .link{
+                text-decoration: none;
+                padding-left: 15px;
+                font-size: 20px;
+            }
+            .list li a:hover{
+                color: red;
+            }
+            .button{
+                font-size: 20px;
+                border-radius: 1cm;
+            }
+            .child2 .link .button:hover{
+                background-color: rgb(235, 233, 152);
+                color: red;
+                
+            }
+            .images{
+              /*  border: 2px solid black; */
+                height: 250px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+            section{
+                /* border: 2px solid grey;*/
+                padding: 10px;
+                overflow-x: scroll;
+            }
+            .images p{
+                height: 200px;
+                width: 200px;
+               /* border: 2px solid green;*/
+                margin: 10px;
+                
+            }
+            .para{
+                display: block;
+                justify-content: center;
+                padding-left: 20px;
+                
+                align-items: center;
+                transition-property: all;
+                border-right: 1px solid rgb(13, 13, 13);
+            }
+            .para label{
+                display: block;
+                text-align: center;
+                color: blue;
+                font-size: 20px;
+                
+            }
+            .para img:hover{
+            
+                height: 150px;
+                width: 150px;
+            
+            }
+            p label :hover{
+                color: red;
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="child1">
+                    <nav>
+                        <ul class="list">
+                            <li><a class="link" href="#"><img class="img" src="flipkartlogo.jpg" ></a></li>
+                            <li><a class="link" href="#">Home</a></li>
+                            <li><a class="link" href="#">Contact us</a></li>
+                            <li><a class="link" href="#">Feedback Form</a></li>
+                            
+                        </ul>
+                    </nav>
+
+                </div>
+                
+            
+            <div class="child2">
+                <a class="link l1" href="#"><input class="button" type="button" value="Sign in"></a>
+                        <a class="link" href="#"><input class="button" type="button" value="Create Account"></a>
+
+            </div>
+            </div>
+            
+             
+        </header>
+        <hr>
+        <section>
+            <div class="images">
+                <p class="para"><img src="mobiles.webp"><label>Mobiles</label></p>
+                <p class="para"> <img src="electronics.webp"> <label>Electronics</label></p>
+                <p class="para"><img src="fashion.webp"><label>Fashion</label> </p>
+                <p class="para"> <img src="travel.webp"><label>Travel</label></p>
+                <p class="para"><img src="appliances.webp"> <label>Appliances</label></p>
+                <p class="para"><img src="home.webp"><label>Home</label></p>
+                <p class="para"> <img src="offers.webp"><label>Offers</label></p>
+
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <div class="footer">
+                <label class="flabel">Follow Us on</label>
+                <br>
+                <img src="New folder/insta.jpeg" height="50px" width="50px">
+                <img src="New folder/twitter.png" height="50px" width="80px">
+                <img src="New folder/you.jpg" height="50px" width="50px">
+    
+            </div>
+        </footer>
+    </body>
+</html>

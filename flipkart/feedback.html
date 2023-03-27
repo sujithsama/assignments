@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <style>
+            .container3{
+              /*  border: 2px solid red; */
+                display: flex;
+                height: auto;
+                width: auto;
+                justify-content: center;
+            }
+            .container3child1,.container3child2{
+              /*  border: 2px solid green; */
+                height: auto;
+                width: auto;
+                font-size: 25px;
+                color: blue;
+            
+            }
+            .box,.box1{
+                background-color: #f3f4f5;
+                border-top: 0ch;
+                border-left: 0ch;
+                border-right: 0ch;
+                font-size: 25px;
+                border-radius: 0.5cm;
+                padding: 11px;
+                
+            }
+            .table{
+                text-align: center;
+            }
+            .submit{
+                font-size: 20px;
+                border-radius: 0.5cm;
+                color: #f3f4f5;
+                background-color: orange;
+                padding: 15px;
+            }
+            .submit:hover{
+                color: red;
+                background-color: rgb(160, 227, 220);
+            }
+            .container3child1{
+                background-color: rgb(199, 243, 240);
+            }
+            .img2{
+                padding-top: 120px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="child1">
+                    <nav>
+                        <ul class="list">
+                            <li><a class="link" href="index.html"><img class="img" src="images/flipkartlogo.jpg" ></a></li>  
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <section>
+            <div class="container3">
+                <div class="container3child1">
+                  
+                  <img class="img2" src="Images/feedback.png">
+                </div>
+                <div class="container3child2">
+                    <form>
+                        <table class="table" border="0" cellspacing="15px" cellpading="10px">
+                            
+                              <tr>
+                                <td>Name:</td>
+                                <td><input class="box" type="text" required="requiried"></td>
+                              </tr>
+                              <tr>
+                                <td>Email Id:</td>
+                                <td><input class="box" type="email"  required="requiried"></td>
+                              </tr>
+                              <tr>
+                                <td>Mobile Number:</td>
+                                <td><input class="box" type="number"  minlength="10" maxlength="10" required="requiried"></td>
+                              </tr>
+                              <tr>
+                                <td>Message:</td>
+                                <td><textarea class="box1"  required="requiried">
+            
+                                </textarea></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td class="feedback"><input class="submit" type="submit" value="feedback"></td>
+                              </tr>
+                            
+                        </table>
+                        
+                      </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+               <div>
+                <label class="flabel">Follow Us on</label>
+                <br>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpeg" height="50px" width="50px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="50px" width="80px"></a>
+                <a href="https://www.youtube.com/" target="_blank">  <img src="images/you.jpg" height="50px" width="50px"></a>
+               </div>
+            </div>
+        </footer>
+    </body>
+</html>

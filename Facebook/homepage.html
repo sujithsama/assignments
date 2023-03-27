@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+          .container{
+            display: flex;
+            border: 2px solid black;
+            justify-content: space-between;
+            position: fixed;
+            
+          } 
+          .child1{
+           /* border: 2px solid red; */
+            height: 600px;
+            width: 300px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+            position: fixed;
+            top: 15%;
+            
+
+          }
+          .child1:hover{
+            overflow: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: proximity;
+            scroll-margin: 10px;
+            scrollbar-width: 10px;
+          }
+          .child2{
+           /* border: 2px solid red; */
+            min-height: 500px;
+            min-width: 600px;
+            height: 600px;
+           width: auto;
+           position: fixed;
+           left: 30%;
+           top: 15%;
+           display: flex;
+           flex-direction: column;
+           overflow-y: scroll;
+          }
+          .child2 div {
+            align-items: center;
+            display: inline-block;
+            background-color: white;
+            margin: 10px;
+            border-radius: 0.2cm;
+            box-shadow: 2px 2px 2px 2px silver;
+           
+          }
+          .child3{
+            /* border: 2px solid red; */
+            min-height: 500px;
+            min-width: 300px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed;
+            left: 80%;
+            top: 15%;
+          }
+          .container div p:hover{
+            background: #e2e3e6;
+          }
+          .child1 div p{
+             height: 50px;
+             min-width: 100px;
+             border-radius: 0.3cm;
+             align-content: center;
+             padding-top: 10px;
+          }
+          .child3 div p{
+             height: 50px;
+             min-width: 100px;
+             border-radius: 0.3cm;
+             align-content: center;
+             padding-top: 10px;
+          }
+          .img{
+             border: 2px solid black ;
+             padding-top: 0px;
+             margin-left: 2px;
+          }
+          .child2  ul{
+            list-style: none;
+          }
+          .child2 ul li{
+            display: inline;
+            height: 15px;
+           
+            width: 20px;
+            padding: 10px;
+            padding-left: 25px;
+            margin-left: 15px;
+            font-size: 20px;
+          }
+          .child2 ul li:hover{
+            background-color: #e2e3e6;
+            border-radius: 0.2cm;
+          }
+          .gimages{
+            height: 400px;
+            width: 400px;
+          }
+          .groupimages{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+           
+        </style>
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="first"><img class="logo" src="images/fblogo.png" height="50px" width="50px"><input class="searchbar" type="search" placeholder="&nbsp search Facebook"></div>
+            <div class="second"><div><img class="menuimg" src="images/homeicon.png"></div><div><img class="menuimg" src="images/friends.png"></div><div><img class="menuimg" src="images/groups.png"></div></div>
+            <div class="first"><input class="button" type="button" value="Find Friends"><img class="menuimg" src="images/menu.png"><img class="menuimg" src="images/mesenger.png"><img class="menuimg" src="images/notifications.png"><img class="menuimg" src="images/profile.png"></div>
+        </nav>
+        <section>
+            <div class="container">
+                <div class="child1">
+                    <div><p>Sama sujith reddy</p></div>
+                    <div><p>Friends</p></div>
+                    <div><p>Most Recent</p></div>
+                    <div><p>Welcome</p></div>
+                    <div><p>Groups</p></div>
+                    <div><p>Marketplace</p></div>
+                    <div><p>Watch</p></div>
+                    <div><p>Memories</p></div>
+                    <div><p>Saved</p></div>
+                    <div><p>Pages</p></div>
+                    <div><p>Events</p></div>
+    
+                </div>
+                <div class="child2">
+                    <div style="display: flex; justify-content: center;text-align: center;align-items: center;">
+                        <div style="height: 200px; width: 150px;justify-self: center;">
+                          <span >Create Story</span>
+                        </div>
+                        <div  style="box-shadow: none;"><p>
+                            
+Share everyday moments with friends and family.<br><br>
+Stories disappear after 24 hours.<br><br>
+Replies and reactions are private.
+                        </p></div>
+                        </div>
+                    <div><p><input class="searchbar" type="search" placeholder="What's on your mind?"></p>
+                    <p><hr></p>
+                <p><ul>
+                    <li> video</li>
+                    <li>Photo/Video</li>
+                    <li>Feeling/Activity</li>
+                </ul></p></div>
+                <div >
+                  <p class="groupimages">
+                    <img class="gimages" src="images/google1.png">
+                    
+                  </p>
+                </div>
+                <div >
+                  <p class="groupimages">
+                    <img class="gimages" src="images/google2.png">
+                  </p>
+                </div>
+                <div >
+                  <p class="groupimages">
+                    <img class="gimages" src="images/google3.jpeg">
+                  </p>
+                </div>
+                <div >
+                  <p class="groupimages">
+                    <img class="gimages" src="images/google4.png">
+                  </p>
+                </div>
+                
+    
+                </div>
+                <div class="child3">
+                 <div><p>Group conversations</p></div>
+                 <div><p></p></div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
+</html>

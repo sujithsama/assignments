@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navbar</title>
+        <link rel="stylesheet" href="css/style1.css">
+        <style>
+            .textarea{
+                display: flex;
+                justify-content: center;
+                height: 500px;
+                width: auto;
+                align-items: center;
+            }
+            .para{
+                font-size: 100px;
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .imagesection{
+                height: auto;
+                width: auto;
+               
+              /*  border: 2px solid white; */
+            }
+            .imagesection-child{
+                display: inline-block;
+                height: auto;
+                width: auto;
+               /* border: 2px solid green; */
+                margin: 10px;
+            }
+            .images{
+                height: 350px;
+                width: 350px;
+                margin: 10px;
+                transition: 0.5s ease-in-out;
+            }
+            .images:hover{
+                height: 370px;
+                width: 370px;
+            }
+            .title{
+                text-align: center;
+                color: white;
+                font-size: 30px;
+                
+            }
+            .title:hover{
+                color: red; 
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+<div class="container">
+   
+    <ul>
+        <Li class="name">SUJITH</Li>
+        <Li><a href="#">HOME</a></Li>
+        <Li><a href="#">CONTACT US</a></Li>
+        <Li><a href="#">ABOUT US</a></Li> 
+        <Li><a href="#">FEEDBACK</a></Li>
+       </ul>
+       <ul class="buttonslist">
+        <li><input class="button" type="button" name="login" value="LOGIN"></li>
+        <li><input class="button" type="button" name="login" value="USER REGISTRATION"></li>
+       </ul>
+
+</div>
+<section>
+    <div class="textarea">
+        <p class="para">
+            Welcome to my Space!
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="imagesection">
+        <h3 class="title"> Image Gallery</h3>
+       <div class="imagesection-child">
+
+        <img class="images" src="Images/google1.png">
+        <img class="images" src="Images/google5.jpg">
+        <img class="images" src="Images/google3.jpeg">
+        <img class="images" src="Images/google4.png">
+
+       </div>
+    </div>
+</section>
+
+    </body>
+</html>

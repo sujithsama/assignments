@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <style>
+.container-1{
+    height: auto;
+    width: auto;
+   /* border: 2px solid red; */
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.childcontainer1{
+    min-height: 500px;
+    min-width: 500px;
+    height: max-content;
+  /*  border: 2px solid orange; */
+    background-color: rgb(82, 82, 213);
+    border-radius: 1cm;
+    
+}
+.childcontainer2{
+    height: 500px;
+    width: 500px;
+   /* border: 2px solid green; */
+    text-align: center;
+
+}
+.table{
+    padding: 80px;
+    font-size: 20px;
+}
+.form{
+    font-size: 20px;
+}
+.text{
+    font-size: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px ;
+    border-color: blue;
+    
+}
+.button1{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: orange;
+    color: white;
+    text-decoration-color: aquamarine;
+  
+}
+ .button1{
+    box-shadow: 2px;
+    border-radius: 0.5cm;
+ }
+ .newflip{
+    color: blue;
+ }
+ .newflip a{
+    text-decoration: none;
+ }
+ .newflip a:hover{
+    color: red;
+ }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="child1">
+                    <nav>
+                        <ul class="list">
+                            <li><a class="link" href="index.html"><img class="img" src="images/flipkartlogo.jpg" ></a></li>
+                            <li style="padding-left:550px; color:brown; font-size: 30px;">LOGIN</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <section>
+            <div class="container-1">
+                <div class="childcontainer1">
+                   <p style="font-size:40PX; color: white; padding-left: 10px;">LOGIN</p>
+                   <BR>
+                    <P style="font-size:20px; color: white; text-align: justify; padding-left: 15px;">Get access to your Orders, Wishlist and Recommendations</P>
+
+                </div>
+                <div class="childcontainer2" >
+                    
+                        <table class="table" cellspacing="10px" cellpadding="2px">
+                           <form class="form">
+                            <tr>
+                                <td><input class="text" type="text" placeholder="enter Mail/Mobile Number" required></td>
+                            </tr>
+                            <tr>
+                                <td><input class="text" type="password" placeholder="enter password" required></td>
+                            </tr>
+                            <tr><td>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</td></tr>
+                            <tr>
+                                <td class="b"><input class="button1" type="submit" value="submit"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr><td class="newflip">New to Flipkart? <a href="useregistration.html">Create an account</a></td></tr>
+                           </form>
+                        </table>
+                       
+                    
+
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>

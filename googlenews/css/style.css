@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+body{
+    background-color: rgba(128,134,139,0.2);
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+}
+.navchild1,.navchild2,.navchild3{
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+}
+ ul{
+  list-style: none;
+}
+ul li{
+    text-decoration: none;
+   
+}
+.navchild2{
+    padding-top: 5px;
+}
+.search{
+    width: 700px;
+    height: 60px;
+    background-color: rgba(128,134,139,0.2);
+    border-radius: 0.2cm;
+    border: 0ch;
+}
+.navchild2 ul li{
+    display: inline-block;
+    padding: 10px;
+    
+}
+.navchild2 ul li  {
+ border-radius: 1cm;
+}
+.navchild2 .icons:hover{
+  background: rgb(231, 229, 229);
+}
+.navchild3 .icons:hover{
+  background: rgb(231, 229, 229);
+}
+.navchild3 .icons{
+    padding: 15px;
+    border-radius: 3cm;
+    height: auto;
+    width: auto;
+}
+.logoimage{
+padding-top: 2px;
+height: 30px;
+width: 60px;
+}
+.navchild3 li{
+display: inline-block;
+}
+.navbar{
+    display: flex;
+    flex-flow: column;
+    background: white;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+.lists{
+    display: flex;
+    
+}
+.lists ul{
+    display: inline-block;
+    
+}
+.lists ul li{
+    display: inline-block;
+    padding-left: 1em;
+    font-size: 0.875rem;
+color: #5f6368;
+margin: 4px 16px;
+font-family: "Google Sans",sans-serif;
+font-weight: 500;
+cursor: pointer;
+    
+}
+.lists ul li:hover{
+    color: black;
+}
+.classlists{
+display: flex;
+justify-content: space-between;
+
+height: auto;
+width: auto;
+} 
+.list1{
+    border-right: 2px solid silver;
+}
+.contentgrid{
+    display: grid;
+grid-template-columns: repeat(12,1fr);
+gap: 16px;
+border: 2px solid red;
+position:static;
+top: 6em;
+
+margin: 40px;
+   }
+   
+   .date{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    grid-column: span 11;
+    flex-flow: column;
+    justify-content: center;
+ 
+   }
+   .weather{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+   background-color: white;
+    flex-flow: column;
+    justify-content: center;
+    align-content: flex-end;
+ border-radius: 2cm;
+
+   }
+   .news{
+    background-color: white;
+    border-radius: 0.5cm;
+    display: flex;
+    flex-flow: column;
+    grid-column: span 8;
+    border-bottom: 1px solid silver;
+    
+   }
+   .topstories{
+    display: flex;
+    color: blue;
+    font-size: 25px;
+     border-bottom: 1px solid silver;
+    width: auto;
+    padding: 20px;
+    
+   }
+   .fullnews{
+    display: flex;
+    padding:6px;
+    border-bottom: 1px solid silver;
+    margin: 2em;
+   }
+   .first{
+        width: 50%;
+        font-size: 20px;
+        font-weight: 500;
+       
+   }
+   .fullnewsimg{
+    width: auto;
+    padding-left: 2em;
+   }
+   article{
+    text-align: justify;
+    padding-bottom: 10px;
+   }
+   .second{
+    margin-left: 3%;
+   }

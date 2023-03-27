@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                border: 2px solid red;
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(4,1fr);
+            }
+            .child2column{
+                grid-column: span 2;
+            }
+            .child1{
+                border:2px solid blue;
+                min-height: 200px;
+                min-width: 200px;
+            }
+            .child2 {
+                border:2px solid blue;
+                min-height: 200px;
+                min-width: 200px;
+            }
+            .child3{
+                border:2px solid blue;
+                min-height: 200px;
+                min-width: 200px;
+            }
+            .child4{
+                border:2px solid blue;
+                min-height: 200px;
+                min-width: 200px;
+            }
+            .child5{
+                border:2px solid blue;
+                min-height: 200px;
+                min-width: 200px;
+            }
+            .child6{
+                border:2px solid blue;
+                min-height: 200px;
+                min-width: 200px;
+            }
+            p{
+                color: rgb(13, 188, 241);
+                font-size: 60px;
+                font-weight: 500;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="child1">
+             <p>This is child1</p>
+            </div>
+            <div class="child2 child2column">
+                <p>This is child2</p> 
+            </div>
+            <div class="child3">
+                <p>This is child3</p>
+            </div>
+            <div class="child4">
+                <p>This is child4</p>
+            </div>
+            <div class="child5">
+                <p>This is child5</p>
+            </div>
+            <div class="child6">
+                <p>This is child6</p>
+            </div>
+        </div>
+    </body>
+</html>

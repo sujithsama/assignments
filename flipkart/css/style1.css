@@ -1,0 +1,43 @@
+body{
+    font-family: 'Lucida Sans';
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url(C:\Users\HI\OneDrive\Desktop\careerX\flipkart\Images\spiderman.jpg);
+}
+.container{
+display: flex;
+justify-content: space-between;
+}
+.container ul{
+list-style: none;
+display: inline-flex;
+}
+.container ul li a{
+text-decoration: none;
+color: white;
+margin-left: 50px;
+transition: all;
+}
+.container ul li a:hover{
+color: red;
+border-bottom: 1.5px solid orange;
+font-size: 18px;
+}
+.name{
+margin-left: 10px;
+color: red;
+font-size: 25px;
+}
+.buttonslist li{
+margin-left: 2em;
+}
+.button{
+font-size: 18px;
+padding: 6px;
+color: white;
+background-color: orange;
+border: 0ch;
+border-radius: 0.1cm;
+}
+.buttonslist .button:hover{
+color: red;
+background-color: white;
+}

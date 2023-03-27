@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    body{
+        background: #f0f2f5;
+    }
+    .desc{
+        color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    width: 471px;
+     }
+    .container{
+        display: flex;
+        justify-content: center;
+       align-items: center;
+       min-width: 500px;
+       min-height: 500px;
+       margin-top: 100px;
+    }
+    .child2{
+        text-align: center;
+       width: auto;
+        height: auto;
+        margin-left: 20px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 55px #0a0b0c;box-shadow: 2px 2px 2px 5px #e1dede;
+          border-radius: 15px;
+        
+    }
+    .child1{
+        margin-right: 30px;
+        text-align: justify;
+    }
+    .text{
+        font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid #dddfe2;
+    }
+    .button{
+        background-color: #1877f2;
+        border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    color: white;
+    }
+    .forgotpass{
+        color: #216fdb;
+    font-family: 'Roboto-Regular', 'Helvetica', 'sans-serif';
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    }
+    .createbutton{
+        height: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    background: #00a400;
+    color: white;
+    border: none;
+}
+    .extra{
+        display: block;
+        padding-right: 180px;
+        margin-right:100px ;
+        
+    }
+</style>
+<script>
+    function myFunction(){
+        window.location.href="homepage.html";
+    }
+</script>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+              <div class="child1">
+                <p class="title"><img src="images/facebook.png"></p>
+                 <p class="desc">Facebook helps you connect and share with the people in your life.</p>
+              </div>
+              <div class="child2">
+                <table cellspacing="15px">
+                    <form>
+                        <tr>
+                            <td>
+                                <input class="text" type="text" placeholder="username" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="text" type="password" placeholder="password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <input class="button" type="submit" value="login" onclick="myFunction()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a class="forgotpass" href="#">Forgotten password?</a></td>
+                        </tr>
+                        <tr>
+                            <td><span><hr></span></td>
+                        </tr>
+                        <tr>
+                            <td><input class="createbutton" type="button" value="Create New Account">
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+
+              </div>
+              
+            </div>
+            
+        </section>
+    </body>
+</html>

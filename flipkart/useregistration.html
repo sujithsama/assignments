@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <style>
+            .container2{
+              /*  border :2px solid red; */
+                height: auto;
+                width: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .child-container1 ,.child-container2{
+               /* border: 2px solid green; */
+            }
+            .child-container1{
+                height: auto;
+                width: 500px;
+            }
+            .child-container2{
+                height: auto;
+                width: auto;
+            }
+            .table{
+                text-align: center;
+                font-size: 25px;
+                color: blue;
+            }
+            .text{
+                font-size: 20px;
+                border: 1px solid rgb(162, 161, 161);
+                padding: 11px;
+                border-radius: 0.2cm;
+                background-color: #F5F6F7
+            }
+            .button2{
+                font-size: 25px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white;
+                background-color: orange;
+                border-color: white;
+                box-shadow: 2px;
+                transition: all;
+
+            }
+            .heading{
+                font-size: 30px;
+                color: white;
+                font-family: cursive;
+                padding-left: 20px;
+                
+            }
+            .child-container1{
+                background-color: rgb(247, 180, 55);
+                border-radius: 0.5cm;
+            }
+            .button2:hover{
+                color:orange;
+                background-color: #F5F6F7;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="child1">
+                    <nav>
+                        <ul class="list">
+                            <li><a class="link" href="index.html"><img class="img" src="images/flipkartlogo.jpg"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <section>
+            <div class="container2">
+                <div class="child-container1">
+                    <h3 class="heading">USER</h3>
+                    <h3 class="heading">REGISTRATION</h4>
+
+                </div>
+                <div class="child-container2">
+                    
+                        <div >
+                            <table class="table" cellspacing="15px" cellpadding="5px">
+                                <form name="registration" id="registration" action="pre" target="">
+                                    <tr>
+                                        <td><input class="text" type="text" placeholder="First Name" required="required" ></td>
+                                        <td><input class="text"  type="text" placeholder="Last Name" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="text"  type="number" placeholder="Enter your mobile number"required="required" minlength="10" maxlength="10"></td>
+                                        <td><input class="text"  type="email" placeholder="Enter your Email" required="required"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label>DOB</label></td>
+                                        <td><input class="text" type="date" required="required" >
+                                            
+                                        </td>
+                                    </tr>
+                                   <tr>
+                                    <td><label>Gender</label></td>
+                                    <td>male<input type="radio" value="M" name="gender">Female<input type="radio" value="F" name="gender">Other<input type="radio" value="o" name="gender"></td>
+                                    
+                                   </tr>
+                                   <tr>
+                                    <td><input class="text"  type="password" name="password" placeholder="Enter Password" required="required"></td>
+                                    <td><input class="text"  type="password" name="password" placeholder="confirm Password" required="requried"></td>
+                                   </tr>
+                                    <tr>
+                                        <td><label>Security Question</label></td>
+                                        <td><select  class="text"  required="requried">
+                                            <option name="fschol">First School</option>
+                                            <option name="pname">Pet name</option>
+                                            <option name="fschol">Favorite color</option>
+                                        </select></td>
+                                    </tr>
+                                   <tr>
+                                    <td><label>Your Answer</label></td>
+                                    <td><textarea class="text"  required="requried">
+            
+                                    </textarea></td>
+                                   </tr>
+                                    
+                                    <tr>
+                                        <td><input class="button2" type="reset" name="reset" value="reset"></td>
+                                        <td><input class="button2" type="submit" name="submit" value="submit"></td>
+                                        
+                                    </tr>
+                                </form>
+                            </table>
+                        </div>
+                   
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
