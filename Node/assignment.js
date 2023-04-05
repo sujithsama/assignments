@@ -54,3 +54,12 @@ fs.createReadStream('one.html.gz')// read file
  .pipe(fs.createWriteStream('one.html'));//write to another file as zip
 
 console.log("File DeCompressed.");
+fs.copyFile(`${source}`,`${dest}`,function(err){
+    if(err)
+    {
+        console.log(err);
+    }
+    else{
+        console.log(`File copied sucessfully`);
+    }
+})
