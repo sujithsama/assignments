@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "pdf-extractor": "^2.2.0",
+    "mongodb": "^5.2.0",
+    "pdf-extractor": "^2.0.0",
     "prompt-sync": "^4.2.0"
   }
 }

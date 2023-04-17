@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: rgb(211, 70, 70);
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar ul li{
+            display: inline-block;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+        }
+
+        @media (max-height:500px) {
+            .navbar{
+            background-color: rgb(45, 41, 41);
+            display: flex;
+            justify-content: space-between;
+                  }
+         .navbar ul li{
+            display: inline-block;
+                   }
+         .navbar ul li a{
+            text-decoration: none;
+              }
+            
+        }
+    </style>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="navcontent">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="navcontent">
+            <ul>
+                <li><input type="button" value="login"></li>
+                <li><input type="button" value="Register"></li>
+            </ul>
+        </div>
+    </navbar>
+</body>
+</html>
