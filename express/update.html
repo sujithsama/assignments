@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+ 
+    <style>
+      *{
+    margin: 0%;
+}
+.header{
+    background-color: rgb(195, 228, 228);
+    display: flex;
+    justify-content: space-between;
+    min-width: 455px;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+}
+.header ul{
+    list-style: none;
+    text-decoration: none;
+    
+}
+.header ul li{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+.list-item a:hover{
+    text-decoration: none;
+    color: rgb(174, 27, 27);
+    border-bottom: 2px solid orange;
+}
+
+.button{
+    font-size: large;
+    border-radius: 0.2cm;
+    padding: 5px;
+}
+.button:hover{
+    background-color: rgb(41, 239, 41);
+    color: white;
+}
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 150px;
+  height: auto;
+}
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(195, 228, 228);
+    height: 50px;
+}
+.button input{
+    padding: 5px;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(148, 143, 143);
+    padding: 50px;
+    border-radius: 0.2cm;
+    background-color: rgb(222, 241, 241);
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.login input{
+    margin: 10px;
+    display: block;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 0.2cm;
+    align-self: center;
+}
+#btn:hover{
+    background-color: green;
+    color: white;
+    border: 0cm;
+}
+#username ,#password, #email, #mobile{
+    height: 30px;
+    width: 200px;
+    border-radius: 0.2cm;
+}
+.loginheader{
+    font-size: 25px;
+    color: rgb(26, 31, 31);
+    border-bottom: 2px solid rgb(144, 144, 195);
+}
+hr{
+    color: black;
+}
+@media (max-width: 600px){
+    .header{
+       background-color: rgb(158, 158, 213);
+       font-size: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+      <ul>
+        <li class="list-item"><a href="#">Home</a></li>
+        <li class="list-item"><a href="#">Update</a></li>
+        <li class="list-item"><a href="#">Delete</a></li>
+        <li class="list-item"><a href="#">Flipkart</a></li>
+      </ul>
+      <ul>
+        <li class="list-item"><input class="button" type="button" value="Login"></li>
+        <li class="list-item"><input class="button" type="button" value="Register"></li>
+      </ul>
+    </header>
+    <section class="body">
+           <div class="login">
+            <p class="loginheader">Update Password</p>
+           <form  method="post" action="www.google.com">
+           
+             <input type="email" id="email" placeholder="Enter your Email">
+            <input type="submit" id="btn" value="Submit">
+           </form>
+            
+           </div>
+            
+         
+        
+    </section>
+    <footer class="footer">
+       <span>Footer</span>
+    </footer>
+</body>
+</html>
