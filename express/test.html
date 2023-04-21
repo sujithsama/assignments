@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+          }
+          
+          .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+          }
+          .grid-item-9{
+            grid-column: span 4;
+            flex-grow: 1;
+            width: 21.3%;
+          }
+          .grid-2{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+          
+          }
+          .grid-item-10{
+            grid-column: span 2;
+            background-color: white;
+          }
+          .inner-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: white;
+            gap: 1px;
+          }
+
+         .inner-item-1{
+            grid-column: span 2;
+            background-color: #ddd;
+         }
+         .inner-item{
+            background-color: #ddd;
+         }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item grid-item-9">9</div>
+      </div>
+      <div class="grid-2">
+        <div class="grid-item grid-item-10 grid-items-all">
+            <div class="inner-grid">
+             <div class="inner-item-1">item1</div>
+             <div class="inner-item">item2</div>
+             <div class="inner-item">item3</div>
+            </div>
+        </div>
+        <div class="grid-item grid-items-all">11</div>
+        <div class="grid-item grid-items-all">12</div>
+        <div class="grid-item grid-items-all">13</div>
+        <div class="grid-item grid-items-all">14</div>
+        </div>
+      
+</body>
+</html>

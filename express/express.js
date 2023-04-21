@@ -1,4 +1,4 @@
-const { log } = require('console');
+
 const express = require('express')
 const fs=require("fs");
 const app = express()
@@ -48,11 +48,19 @@ const deletepage=fs.readFileSync(`delete.html`,'utf-8',function(err)
         console.log(`file read sucessfully`);
     }
 })
-
+const flipkart=fs.readFileSync(`flipkart.html`,'utf-8',function(err)
+{
+    if(err){
+        console.log('error');
+    }
+    else{
+        console.log(`file read sucessfully`);
+    }
+})
 app.get('/', (req, res) => {
   res.send(home)
 })
-app.get('/login', (req, res) => {
+app.post('/login', (req, res) => {
     res.send(login)
 })
   app.get('/register', (req, res) => {
@@ -63,6 +71,9 @@ app.get('/login', (req, res) => {
   })
   app.get('/delete', (req, res) => {
     res.send(deletepage)
+  })
+  app.get('/flipkart', (req, res) => {
+    res.send(flipkart)
   })
 
 app.listen(port, () => {

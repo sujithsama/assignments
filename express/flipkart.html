@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flipkart</title>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+           .header{
+            background-color: rgb(51, 51, 230);
+            display: flex;
+            height: 50px;
+            align-items: center;
+            color: white;
+            justify-content: space-between;
+           }
+           .header ul{
+            list-style: none;
+          
+           }
+           header ul li{
+            display: inline-block;
+            padding: 20px;
+           }
+           .flipitem{
+          display: flex;
+          flex-direction: column;
+          width: 350px;
+          align-items: center;
+          border: 2px solid grey;
+          margin: 20px;
+           }
+           .flipitem img{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+           }
+           .body{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 100%;
+        
+           }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <ul>
+                <li>Home</li>
+            </ul>
+            <ul>
+                <li>Login</li>
+                <li>Signup</li>
+            </ul>
+        </header>
+        <section>
+            <div class="body" id="body"><div class="flipitem">
+         <img src="https://i.imgur.com/DPQ2Ewk.jpg">
+<p>Samsung Galaxy S20</p>
+        <p>undefined</p>
+ </div><div class="flipitem">
+         <img src="https://i.imgur.com/XZL8Q7W.jpg">
+<p>Apple MacBook Pro</p>
+        <p>undefined</p>
+ </div><div class="flipitem">
+         <img src="https://i.imgur.com/WVtMKjK.jpg">
+<p>Sony WH-1000XM4</p>
+        <p>undefined</p>
+ </div><div class="flipitem">
+         <img src="https://i.imgur.com/cVq9RUz.jpg">
+<p>Fitbit Versa 3</p>
+        <p>undefined</p>
+ </div><div class="flipitem">
+         <img src="https://i.imgur.com/vyj7wRk.jpg">
+<p>Ninja Foodi</p>
+        <p>undefined</p>
+ </div></div>
+        </section>
+        <script src="flipscript.js"></script>
+        <p>hi</p>
+    </body>
+    </html>
